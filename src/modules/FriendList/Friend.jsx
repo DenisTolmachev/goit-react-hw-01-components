@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export const Friend = ({ id, isOline, avatar, name }) => {
+export const Friend = ({ isOline, avatar, name }) => {
   return (
     <li>
       <span className="status">{isOline}</span>
