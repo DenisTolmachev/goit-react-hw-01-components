@@ -6,7 +6,7 @@ export const UserProfile = styled.div`
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  border: 1px solid ${p => p.theme.colors.border};
+  margin-top: 20px;
   box-shadow: 0px 5px 10px -4px #050505;
 `;
 
@@ -25,11 +25,13 @@ export const UserAvatar = styled.img`
 export const UserName = styled.p`
   font-size: ${p => p.theme.fontSizes.l};
   font-weight: ${p => p.theme.fontWeights.bold};
+  margin-bottom: 10px;
 `;
 
 export const UserTag = styled.p`
   font-size: ${p => p.theme.fontSizes.m};
   color: ${p => p.theme.colors.text};
+  margin-bottom: 10px;
 `;
 
 export const UserLocation = styled.p`
