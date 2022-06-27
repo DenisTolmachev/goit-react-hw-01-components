@@ -8,7 +8,9 @@ export const theme = {
     secondary: '#F3F6F9', //Ледник
     accent: '#609',
     muted: '#f1f1f2', //Снежное облако
-    border: '#E4E9F0'
+    border: '#E4E9F0',
+    online: '#00ff00',
+    offline: 'red',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
