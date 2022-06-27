@@ -27,7 +27,12 @@ export const StatisticsList = styled.ul`
 export const StatisticsItem = styled.li`
   width: 100%;
   padding: 10px;
-  background-color: ${p => p.theme.colors.accent};
+  :nth-child(odd) {
+    background-color: ${p => p.theme.colors.accent};
+  }
+  :nth-child(even) {
+    background-color: ${p => p.theme.colors.primary};
+  }
   border: 1px solid ${p => p.theme.colors.border};
 `;
 

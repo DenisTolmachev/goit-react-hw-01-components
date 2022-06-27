@@ -10,11 +10,18 @@ export const Table = styled.table`
 
 export const TableHead = styled.th`
   padding: 10px;
-
   background-color: ${p => p.theme.colors.primary};
+`;
+
+export const TableRow = styled.tr`
+  :nth-child(odd) {
+    background-color: ${p => p.theme.colors.muted};
+  }
+  :nth-child(even) {
+    background-color: ${p => p.theme.colors.border};
+  }
 `;
 
 export const TableData = styled.td`
   padding: 10px;
-  background-color: ${p => p.theme.colors.background};
 `;
