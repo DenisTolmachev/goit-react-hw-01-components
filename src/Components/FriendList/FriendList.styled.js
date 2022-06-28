@@ -8,7 +8,7 @@ export const FriendsListContainer = styled.li`
   margin: 0 auto;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: ${p => p.theme.colors.muted};
+  background-color: ${({ theme }) => theme.colors.muted};
   box-shadow: 0px 5px 10px -4px #050505;
 `;
 
@@ -17,19 +17,19 @@ export const OnlineStatus = styled.span`
   height: 20px;
   border-radius: 50%;
   margin-right: 20px;
-  background-color: ${p =>
-    p.status ? p.theme.colors.online : p.theme.colors.offline};
+  background-color: ${({ theme, isOnline }) =>
+    isOnline ? theme.colors.online : theme.colors.offline};
 `;
 
 export const FriendAvatar = styled.img`
   width: 64px;
-  background-color: ${p => p.theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.primary};
   padding: 10px;
   margin-right: 20px;
   border-radius: 50%;
 `;
 
 export const FriendName = styled.p`
-  font-size: ${p => p.theme.fontSizes.ml};
-  font-weight: ${p => p.theme.fontWeights.bold};
+  font-size: ${({ theme }) => theme.fontSizes.ml};
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
 `;

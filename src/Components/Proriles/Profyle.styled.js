@@ -12,31 +12,31 @@ export const UserProfile = styled.div`
 
 export const UserDescription = styled.div`
   padding: 40px;
-  background-color: ${p => p.theme.colors.muted};
+  background-color: ${({theme}) => theme.colors.muted};
 `;
 
 export const UserAvatar = styled.img`
   width: 64px;
-  background-color: ${p => p.theme.colors.primary};
+  background-color: ${({theme}) => theme.colors.primary};
   padding: 10px;
   border-radius: 50%;
 `;
 
 export const UserName = styled.p`
-  font-size: ${p => p.theme.fontSizes.l};
-  font-weight: ${p => p.theme.fontWeights.bold};
+  font-size: ${({theme}) => theme.fontSizes.l};
+  font-weight: ${({theme}) => theme.fontWeights.bold};
   margin-bottom: 10px;
 `;
 
 export const UserTag = styled.p`
-  font-size: ${p => p.theme.fontSizes.m};
-  color: ${p => p.theme.colors.text};
+  font-size: ${({theme}) => theme.fontSizes.m};
+  color: ${({theme}) => theme.colors.text};
   margin-bottom: 10px;
 `;
 
 export const UserLocation = styled.p`
-  font-size: ${p => p.theme.fontSizes.ml};
-  color: ${p => p.theme.colors.text};
+  font-size: ${({theme}) => theme.fontSizes.ml};
+  color: ${({theme}) => theme.colors.text};
 `;
 
 export const UserStatsList = styled.ul`
@@ -44,7 +44,7 @@ export const UserStatsList = styled.ul`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: ${p => p.theme.colors.secondary};
+  background-color: ${({theme}) => theme.colors.secondary};
 `;
 
 export const UserStatsItem = styled.li`
@@ -52,15 +52,15 @@ export const UserStatsItem = styled.li`
   flex-direction: column;
   padding: 10px 0;
   width: 100%;
-  border: 1px solid ${p => p.theme.colors.border};
+  border: 1px solid ${({theme}) => theme.colors.border};
 `;
 
 export const UserStatsLabel = styled.span`
-  font-size: ${p => p.theme.fontSizes.s};
+  font-size: ${({theme}) => theme.fontSizes.s};
   margin-bottom: 8px;
 `;
 
 export const UserStatsQuantity = styled.span`
-  font-size: ${p => p.theme.fontSizes.m};
-  font-weight: ${p => p.theme.fontWeights.bold};
+  font-size: ${({theme}) => theme.fontSizes.m};
+  font-weight: ${({theme}) => theme.fontWeights.bold};
 `;

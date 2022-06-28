@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { getRandomHexColor } from 'utils/getRandomHexColor';
 
 export const StatisticsContainer = styled.div`
   display: flex;
@@ -7,7 +8,7 @@ export const StatisticsContainer = styled.div`
   width: 90%;
   margin: 0 auto;
   margin-top: 20px;
-  background-color: ${p => p.theme.colors.muted};
+  background-color: ${({ theme }) => theme.colors.muted};
   box-shadow: 0px 5px 10px -4px #050505;
 `;
 
@@ -21,27 +22,22 @@ export const StatisticsList = styled.ul`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: ${p => p.theme.colors.secondary};
+  background-color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const StatisticsItem = styled.li`
   width: 100%;
   padding: 10px;
-  :nth-child(odd) {
-    background-color: ${p => p.theme.colors.accent};
-  }
-  :nth-child(even) {
-    background-color: ${p => p.theme.colors.primary};
-  }
-  border: 1px solid ${p => p.theme.colors.border};
+  background-color: ${getRandomHexColor};
+  border: 1px solid ${({ theme }) => theme.colors.border};
 `;
 
 export const StatisticsLabel = styled.p`
-  color: ${p => p.theme.colors.white};
+  color: ${({ theme }) => theme.colors.white};
   margin-bottom: 8px;
 `;
 
 export const StatisticsPersent = styled.p`
-  color: ${p => p.theme.colors.white};
-  font-size: ${p => p.theme.fontSizes.ml};
+  color: ${({ theme }) => theme.colors.white};
+  font-size: ${({ theme }) => theme.fontSizes.ml};
 `;

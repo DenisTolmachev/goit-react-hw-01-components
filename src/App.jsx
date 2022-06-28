@@ -1,13 +1,13 @@
-import { Main } from 'common/main';
+import { Main } from 'common/Main';
 import user from 'data/user';
 import friends from 'data/friends';
 import data from 'data/data';
 import transactions from 'data/transactions';
-import { Profile } from './Proriles/Profile';
-import { FriendsList } from './FriendList/FriendList';
-import { Statistics } from './Statistics/Statistics';
-import { TransactionTable } from './Transaction/TransactionTable';
-import { Section } from 'common/section';
+import { Profile } from './Components/Proriles/Profile';
+import { FriendsList } from './Components/FriendList/FriendList';
+import { Statistics } from './Components/Statistics/Statistics';
+import { TransactionTable } from './Components/Transaction/TransactionTable';
+import { Section } from 'common/Section';
 
 export const App = () => {
   return (
