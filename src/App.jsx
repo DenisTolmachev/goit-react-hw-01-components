@@ -1,5 +1,5 @@
-import { Main } from 'qwe/Main';
-import { Section } from 'qwe/Section';
+import { Main } from 'common/Main';
+import { Section } from 'common/Section';
 import user from 'data/user';
 import friends from 'data/friends';
 import data from 'data/data';
